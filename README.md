@@ -8,15 +8,6 @@ A simple and attractive✨ webpage created to display a personalized welcome mes
 * 💫 Glowing text effect
 * 📱 Full-screen responsive layout
 
-## 📂 Project Structure
-
-```text
-Welcome-Aashirya/
-│
-├── index.html
-└── README.md
-```
-
 ##  How to Run
 
 1. Download or clone this repository.
