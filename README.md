@@ -1,6 +1,6 @@
 # ✨Animated Webpage
 
-A simple and attractive webpage created to display a personalized welcome message for **Aashirya**.
+A simple and attractive✨ webpage created to display a personalized welcome message for **Aashirya**.
 
 ## 🌟 Features
 * ✨ Personalized **"Welcome Aashirya"** message
