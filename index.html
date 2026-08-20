@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Welcome Aashirya</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #1a0033, #3d0066, #6600cc, #1a0033);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .container {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .welcome-text {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: #e0c3ff;
+    opacity: 0;
+    animation: fadeInDown 1.2s ease forwards;
+    margin-bottom: 0.5rem;
+  }
+
+  .name-text {
+    font-size: 5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ff9de2, #ffd76e, #7afcff, #ff9de2);
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 4s linear infinite, popIn 1s ease 0.5s backwards;
+    text-shadow: 0 0 40px rgba(255, 157, 226, 0.4);
+  }
+
+  @keyframes shine {
+    to { background-position: 300% center; }
+  }
+
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes popIn {
+    0% { opacity: 0; transform: scale(0.6); }
+    70% { transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  .underline {
+    width: 0;
+    height: 4px;
+    margin: 1.5rem auto 0;
+    background: linear-gradient(90deg, #ff9de2, #7afcff);
+    border-radius: 2px;
+    animation: growLine 1s ease 1.4s forwards;
+    box-shadow: 0 0 15px rgba(122, 252, 255, 0.7);
+  }
+
+  @keyframes growLine {
+    to { width: 220px; }
+  }
+
+  .sparkle {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.8;
+    animation: twinkle linear infinite;
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes floatUp {
+    from { transform: translateY(110vh) translateX(0); }
+    to { transform: translateY(-10vh) translateX(20px); }
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="welcome-text">Welcome</div>
+    <div class="name-text">Aashirya</div>
+    <div class="underline"></div>
+  </div>
+
+  <script>
+    // Generate floating sparkles
+    const body = document.body;
+    for (let i = 0; i < 45; i++) {
+      const s = document.createElement('div');
+      s.className = 'sparkle';
+      const size = Math.random() * 4 + 1;
+      s.style.width = size + 'px';
+      s.style.height = size + 'px';
+      s.style.left = Math.random() * 100 + 'vw';
+      s.style.top = Math.random() * 100 + 'vh';
+      s.style.animationDuration = (Math.random() * 3 + 2) + 's';
+      s.style.animationDelay = (Math.random() * 5) + 's';
+      body.appendChild(s);
+    }
+  </script>
+
+</body>
+</html>
