@@ -27,7 +27,6 @@ Hi! I'm **Aashirya**, a first-year college student interested in **Python, Cyber
 | Skill         | Level    |
 | ------------- | -------- |
 | Python        | Beginner |
-| HTML          | Beginner |
 | Cybersecurity | Beginner |
 
 ---
