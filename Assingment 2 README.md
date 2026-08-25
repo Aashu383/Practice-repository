@@ -32,7 +32,7 @@ Hi! I'm **Aashirya**, a first-year college student interested in **Python, Cyber
 ---
 
 ## Image
-![Coding](https://images.unsplash.com/photo-1515879218367-8466d910aaa4)
+![Coding](https://cdn.stocksnap.io/img-thumbs/960w/code-coding_TIV258VG3N.jpg)
 ---
 
 ## Python Code
